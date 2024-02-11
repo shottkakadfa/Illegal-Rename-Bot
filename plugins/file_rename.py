@@ -131,7 +131,6 @@ async def doc(bot, update):
 	        video=file_path,
 	        caption=caption,
 		thumb=ph_path,
-		supports_streaming=True,
 		duration=duration,
 	        progress=progress_for_pyrogram,
 		progress_args=("Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....", ms, time.time()))
