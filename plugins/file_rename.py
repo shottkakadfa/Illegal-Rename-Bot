@@ -123,7 +123,6 @@ async def doc(bot, update):
                 document=file_path,
                 thumb=ph_path, 
                 caption=caption, 
-		supports_streaming=True,
                 progress=progress_for_pyrogram,
                 progress_args=("Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....", ms, time.time()))
         elif type == "video": 
@@ -132,6 +131,7 @@ async def doc(bot, update):
 	        video=file_path,
 	        caption=caption,
 		thumb=ph_path,
+		supports_streaming=True,
 		duration=duration,
 	        progress=progress_for_pyrogram,
 		progress_args=("Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....", ms, time.time()))
